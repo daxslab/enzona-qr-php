@@ -33,6 +33,6 @@
         "psr-4": { "daxslab\\enzona\\qr\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "daxslab\\enzona\\qr\\" : "test/" }
+        "psr-4": { "daxslab\\enzona\\qr\\test\\" : "test/" }
     }
 }
