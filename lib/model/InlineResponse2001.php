@@ -322,61 +322,61 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->getQrCodeAllowableValues();
-        if (!is_null($this->container['qr_code']) && !in_array($this->container['qr_code'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'qr_code', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getAmountAllowableValues();
-        if (!is_null($this->container['amount']) && !in_array($this->container['amount'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'amount', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getCurrencyAllowableValues();
-        if (!is_null($this->container['currency']) && !in_array($this->container['currency'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'currency', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getDescriptionAllowableValues();
-        if (!is_null($this->container['description']) && !in_array($this->container['description'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'description', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getNameAllowableValues();
-        if (!is_null($this->container['name']) && !in_array($this->container['name'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'name', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getAvatarAllowableValues();
-        if (!is_null($this->container['avatar']) && !in_array($this->container['avatar'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'avatar', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getUsernameAllowableValues();
-        if (!is_null($this->container['username']) && !in_array($this->container['username'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'username', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
+//        $allowedValues = $this->getQrCodeAllowableValues();
+//        if (!is_null($this->container['qr_code']) && !in_array($this->container['qr_code'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'qr_code', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getAmountAllowableValues();
+//        if (!is_null($this->container['amount']) && !in_array($this->container['amount'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'amount', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getCurrencyAllowableValues();
+//        if (!is_null($this->container['currency']) && !in_array($this->container['currency'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'currency', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getDescriptionAllowableValues();
+//        if (!is_null($this->container['description']) && !in_array($this->container['description'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'description', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getNameAllowableValues();
+//        if (!is_null($this->container['name']) && !in_array($this->container['name'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'name', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getAvatarAllowableValues();
+//        if (!is_null($this->container['avatar']) && !in_array($this->container['avatar'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'avatar', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getUsernameAllowableValues();
+//        if (!is_null($this->container['username']) && !in_array($this->container['username'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'username', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
 
         return $invalidProperties;
     }
@@ -413,14 +413,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setQrCode($qr_code)
     {
         $allowedValues = $this->getQrCodeAllowableValues();
-        if (!is_null($qr_code) && !in_array($qr_code, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'qr_code', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($qr_code) && !in_array($qr_code, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'qr_code', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['qr_code'] = $qr_code;
 
         return $this;
@@ -446,14 +446,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setAmount($amount)
     {
         $allowedValues = $this->getAmountAllowableValues();
-        if (!is_null($amount) && !in_array($amount, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'amount', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($amount) && !in_array($amount, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'amount', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['amount'] = $amount;
 
         return $this;
@@ -479,14 +479,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setCurrency($currency)
     {
         $allowedValues = $this->getCurrencyAllowableValues();
-        if (!is_null($currency) && !in_array($currency, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'currency', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($currency) && !in_array($currency, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'currency', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['currency'] = $currency;
 
         return $this;
@@ -512,14 +512,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $allowedValues = $this->getDescriptionAllowableValues();
-        if (!is_null($description) && !in_array($description, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'description', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($description) && !in_array($description, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'description', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['description'] = $description;
 
         return $this;
@@ -545,14 +545,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setName($name)
     {
         $allowedValues = $this->getNameAllowableValues();
-        if (!is_null($name) && !in_array($name, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'name', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($name) && !in_array($name, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'name', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['name'] = $name;
 
         return $this;
@@ -578,14 +578,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setAvatar($avatar)
     {
         $allowedValues = $this->getAvatarAllowableValues();
-        if (!is_null($avatar) && !in_array($avatar, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'avatar', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($avatar) && !in_array($avatar, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'avatar', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['avatar'] = $avatar;
 
         return $this;
@@ -635,14 +635,14 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     public function setUsername($username)
     {
         $allowedValues = $this->getUsernameAllowableValues();
-        if (!is_null($username) && !in_array($username, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'username', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($username) && !in_array($username, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'username', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['username'] = $username;
 
         return $this;

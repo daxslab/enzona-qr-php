@@ -233,21 +233,21 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->getVendorIdentityCodeAllowableValues();
-        if (!is_null($this->container['vendor_identity_code']) && !in_array($this->container['vendor_identity_code'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'vendor_identity_code', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getImageAllowableValues();
-        if (!is_null($this->container['image']) && !in_array($this->container['image'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'image', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
+//        $allowedValues = $this->getVendorIdentityCodeAllowableValues();
+//        if (!is_null($this->container['vendor_identity_code']) && !in_array($this->container['vendor_identity_code'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'vendor_identity_code', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getImageAllowableValues();
+//        if (!is_null($this->container['image']) && !in_array($this->container['image'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'image', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
 
         return $invalidProperties;
     }
@@ -284,14 +284,14 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     public function setVendorIdentityCode($vendor_identity_code)
     {
         $allowedValues = $this->getVendorIdentityCodeAllowableValues();
-        if (!is_null($vendor_identity_code) && !in_array($vendor_identity_code, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'vendor_identity_code', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($vendor_identity_code) && !in_array($vendor_identity_code, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'vendor_identity_code', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['vendor_identity_code'] = $vendor_identity_code;
 
         return $this;
@@ -365,14 +365,14 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     public function setImage($image)
     {
         $allowedValues = $this->getImageAllowableValues();
-        if (!is_null($image) && !in_array($image, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'image', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($image) && !in_array($image, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'image', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['image'] = $image;
 
         return $this;

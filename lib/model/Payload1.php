@@ -278,45 +278,45 @@ class Payload1 implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->getAmountAllowableValues();
-        if (!is_null($this->container['amount']) && !in_array($this->container['amount'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'amount', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getCurrencyAllowableValues();
-        if (!is_null($this->container['currency']) && !in_array($this->container['currency'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'currency', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getDescriptionAllowableValues();
-        if (!is_null($this->container['description']) && !in_array($this->container['description'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'description', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getReturnUrlAllowableValues();
-        if (!is_null($this->container['return_url']) && !in_array($this->container['return_url'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'return_url', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getNotifyUrlAllowableValues();
-        if (!is_null($this->container['notify_url']) && !in_array($this->container['notify_url'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'notify_url', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
+//        $allowedValues = $this->getAmountAllowableValues();
+//        if (!is_null($this->container['amount']) && !in_array($this->container['amount'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'amount', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getCurrencyAllowableValues();
+//        if (!is_null($this->container['currency']) && !in_array($this->container['currency'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'currency', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getDescriptionAllowableValues();
+//        if (!is_null($this->container['description']) && !in_array($this->container['description'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'description', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getReturnUrlAllowableValues();
+//        if (!is_null($this->container['return_url']) && !in_array($this->container['return_url'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'return_url', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getNotifyUrlAllowableValues();
+//        if (!is_null($this->container['notify_url']) && !in_array($this->container['notify_url'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'notify_url', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
 
         return $invalidProperties;
     }
@@ -353,14 +353,14 @@ class Payload1 implements ModelInterface, ArrayAccess
     public function setAmount($amount)
     {
         $allowedValues = $this->getAmountAllowableValues();
-        if (!is_null($amount) && !in_array($amount, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'amount', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($amount) && !in_array($amount, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'amount', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['amount'] = $amount;
 
         return $this;
@@ -386,14 +386,14 @@ class Payload1 implements ModelInterface, ArrayAccess
     public function setCurrency($currency)
     {
         $allowedValues = $this->getCurrencyAllowableValues();
-        if (!is_null($currency) && !in_array($currency, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'currency', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($currency) && !in_array($currency, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'currency', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['currency'] = $currency;
 
         return $this;
@@ -419,14 +419,14 @@ class Payload1 implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $allowedValues = $this->getDescriptionAllowableValues();
-        if (!is_null($description) && !in_array($description, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'description', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($description) && !in_array($description, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'description', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['description'] = $description;
 
         return $this;
@@ -452,14 +452,14 @@ class Payload1 implements ModelInterface, ArrayAccess
     public function setReturnUrl($return_url)
     {
         $allowedValues = $this->getReturnUrlAllowableValues();
-        if (!is_null($return_url) && !in_array($return_url, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'return_url', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($return_url) && !in_array($return_url, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'return_url', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['return_url'] = $return_url;
 
         return $this;
@@ -485,14 +485,14 @@ class Payload1 implements ModelInterface, ArrayAccess
     public function setNotifyUrl($notify_url)
     {
         $allowedValues = $this->getNotifyUrlAllowableValues();
-        if (!is_null($notify_url) && !in_array($notify_url, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'notify_url', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($notify_url) && !in_array($notify_url, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'notify_url', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['notify_url'] = $notify_url;
 
         return $this;

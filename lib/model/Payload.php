@@ -240,29 +240,29 @@ class Payload implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->getAmountAllowableValues();
-        if (!is_null($this->container['amount']) && !in_array($this->container['amount'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'amount', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getCurrencyAllowableValues();
-        if (!is_null($this->container['currency']) && !in_array($this->container['currency'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'currency', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->getDescriptionAllowableValues();
-        if (!is_null($this->container['description']) && !in_array($this->container['description'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value for 'description', must be one of '%s'",
-                implode("', '", $allowedValues)
-            );
-        }
+//        $allowedValues = $this->getAmountAllowableValues();
+//        if (!is_null($this->container['amount']) && !in_array($this->container['amount'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'amount', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getCurrencyAllowableValues();
+//        if (!is_null($this->container['currency']) && !in_array($this->container['currency'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'currency', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
+//
+//        $allowedValues = $this->getDescriptionAllowableValues();
+//        if (!is_null($this->container['description']) && !in_array($this->container['description'], $allowedValues, true)) {
+//            $invalidProperties[] = sprintf(
+//                "invalid value for 'description', must be one of '%s'",
+//                implode("', '", $allowedValues)
+//            );
+//        }
 
         return $invalidProperties;
     }
@@ -299,14 +299,14 @@ class Payload implements ModelInterface, ArrayAccess
     public function setAmount($amount)
     {
         $allowedValues = $this->getAmountAllowableValues();
-        if (!is_null($amount) && !in_array($amount, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'amount', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($amount) && !in_array($amount, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'amount', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['amount'] = $amount;
 
         return $this;
@@ -332,14 +332,14 @@ class Payload implements ModelInterface, ArrayAccess
     public function setCurrency($currency)
     {
         $allowedValues = $this->getCurrencyAllowableValues();
-        if (!is_null($currency) && !in_array($currency, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'currency', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($currency) && !in_array($currency, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'currency', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['currency'] = $currency;
 
         return $this;
@@ -365,14 +365,14 @@ class Payload implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $allowedValues = $this->getDescriptionAllowableValues();
-        if (!is_null($description) && !in_array($description, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value for 'description', must be one of '%s'",
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
+//        if (!is_null($description) && !in_array($description, $allowedValues, true)) {
+//            throw new \InvalidArgumentException(
+//                sprintf(
+//                    "Invalid value for 'description', must be one of '%s'",
+//                    implode("', '", $allowedValues)
+//                )
+//            );
+//        }
         $this->container['description'] = $description;
 
         return $this;
